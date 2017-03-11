@@ -1,80 +1,100 @@
-/**
- * @file
- * Print styling
- *
- * We provide some sane print styling for Drupal using Zen's layout method.
- */
+/*
+Error: Undefined variable: "$base-font-size".
+        on line 30 of /home/alex/sites/worldup/sites/all/themes/azhyna/sass/print.scss
 
-/**
- * By importing this CSS file as media "all", we allow this print file to be
- * aggregated with other stylesheets, for improved front-end performance.
- */
-@media print {
+25:   #content {
+26:     /* Add visible URL after links. *\/
+27:     a[href]:after {
+28:       content: " (" attr(href) ")";
+29:       font-weight: normal;
+30:       font-size: $base-font-size;
+31:     }
+32: 
+33:     /* Only display useful links. *\/
+34:     a[href^="javascript:"]:after,
+35:     a[href^="#"]:after {
 
-  /* Underline all links. */
-  a:link,
-  a:visited {
-    text-decoration: underline !important;
-  }
-
-  /* Don't underline header. */
-  a:link.header__site-link,
-  a:visited.header__site-link {
-    text-decoration: none !important;
-  }
-
-  /* Add visible URL after links. */
-  #content a[href]:after {
-    content: " (" attr(href) ")";
-    font-weight: normal;
-    font-size: 16px;
-  }
-
-  /* Only display useful links. */
-  #content a[href^="javascript:"]:after,
-  #content a[href^="#"]:after {
-    content: "";
-  }
-
-  /* Add visible title after abbreviations. */
-  #content abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* Un-float the content. */
-  #content {
-    float: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* Turn off any background colors or images. */
-  body,
-  #page,
-  #main,
-  #content {
-    color: #000;
-    background-color: transparent !important;
-    background-image: none !important;
-  }
-
-  /* Hide sidebars and nav elements. */
-  #skip-link,
-  #toolbar,
-  #navigation,
-  .region-sidebar-first,
-  .region-sidebar-second,
-  #footer,
-  .breadcrumb,
-  .tabs,
-  .action-links,
-  .links,
-  .book-navigation,
-  .forum-topic-navigation,
-  .pager,
-  .feed-icons {
-    visibility: hidden;
-    display: none;
-  }
-}
+Backtrace:
+/home/alex/sites/worldup/sites/all/themes/azhyna/sass/print.scss:30
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/commands/base.rb:18:in `execute'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/commands/project_base.rb:19:in `execute'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/bin/compass:30:in `block in <top (required)>'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/bin/compass:44:in `call'
+/home/alex/.rvm/gems/ruby-2.1.2/gems/compass-1.1.0.alpha.3/bin/compass:44:in `<top (required)>'
+/home/alex/.rvm/gems/ruby-2.1.2/bin/compass:22:in `load'
+/home/alex/.rvm/gems/ruby-2.1.2/bin/compass:22:in `<main>'
+/home/alex/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/home/alex/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$base-font-size\".\A         on line 30 of /home/alex/sites/worldup/sites/all/themes/azhyna/sass/print.scss\A \A 25:   #content {\A 26:     /* Add visible URL after links. */\A 27:     a[href]:after {\A 28:       content: \" (\" attr(href) \")\";\A 29:       font-weight: normal;\A 30:       font-size: $base-font-size;\A 31:     }\A 32: \A 33:     /* Only display useful links. */\A 34:     a[href^=\"javascript:\"]:after,\A 35:     a[href^=\"#\"]:after {"; }

@@ -33,7 +33,7 @@ body{
   .region-bottom {
     outline: 1px solid #ccc;
 
-    
+
   }
 }
 
@@ -106,7 +106,7 @@ body{
 		width: 100%;
 		overflow: hidden;
 		background-color:#fff;
-		
+
 		.views-row{
 			width: 100%;
 			img{
@@ -134,14 +134,14 @@ body{
 				}
 			}
 		}
-		
+
 		.views-slideshow-controls-top{
-			position: absolute;			
+			position: absolute;
 			top: 370px;
 			width: 100%;
 			text-align: center;
 			.v-s-wrap{
-				max-width: 1200px; 
+				max-width: 1200px;
 				margin: 0 auto;
 				.widget_pager_top{
 					position:relative;
@@ -155,13 +155,16 @@ body{
 				width: 15px;
 				border: 1px solid #000;
 				border-radius: 50%;
-				&.active{background: #555;}
+        padding-left: 0;
+				&.active{
+          background: #555;
+          }
 				}
 		}
 	}
 
-} 
- 
+}
+
 /* Wrapping link for logo. */
 .header__logo {
   float: left;
@@ -223,7 +226,7 @@ body{
   /* Sometimes you want to prevent overlapping with main div. */
   /* overflow: hidden; */
   background-color: $graphite;
-	
+
   .block {
     margin-bottom: 0;
   }

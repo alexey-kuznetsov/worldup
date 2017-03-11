@@ -17,7 +17,18 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+
+  $(document).ready(function(){
+  $('.page-node-4 .node tbody').each(function () {
+    $(this).addClass('element-invisible')
+  });
+  $('.page-node-4 caption').each(function () {
+    $(this).click(function () {
+      $(this).next().toggleClass('element-invisible')
+    })
+   });
+  })
+
 
   }
 };
