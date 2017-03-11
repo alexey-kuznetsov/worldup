@@ -944,48 +944,24 @@ table {
   /* line 263, ../sass/layouts/responsive.scss */
   #block-views-seo-footer-block {
     overflow: hidden;
-    float: left;
-    width: 200%;
-    margin-left: 0%;
-    margin-right: -200%;
-    padding-left: 0;
-    padding-right: 0;
     margin-left: 10px;
-  }
-  /* line 269, ../sass/layouts/responsive.scss */
-  #block-views-seo-footer-block .view-content .views-row-odd {
+    width: 45%;
     float: left;
-    width: 200%;
-    margin-left: 0%;
-    margin-right: -200%;
   }
-  /* line 272, ../sass/layouts/responsive.scss */
-  #block-views-seo-footer-block .view-content .views-row-even {
-    float: left;
-    width: 200%;
-    margin-left: 200%;
-    margin-right: -400%;
-    float: none;
+  /* line 270, ../sass/layouts/responsive.scss */
+  #block-views-seo-footer-block .view-content {
+    column-count: 2;
   }
 
-  /* line 278, ../sass/layouts/responsive.scss */
-  #block-block-3 {
-    float: left;
-    width: 100%;
-    margin-left: 200%;
-    margin-right: -300%;
-  }
-
-  /* line 279, ../sass/layouts/responsive.scss */
+  /* line 274, ../sass/layouts/responsive.scss */
+  #block-block-3,
   #block-block-2 {
     float: left;
-    width: 100%;
-    margin-left: 300%;
-    margin-right: -400%;
+    width: 25%;
   }
 }
 @media all and (max-width: 700px) {
-  /* line 284, ../sass/layouts/responsive.scss */
+  /* line 283, ../sass/layouts/responsive.scss */
   .view-rest .views-row {
     min-width: 100%;
   }
