@@ -11,7 +11,13 @@
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
-
+  $(document).ready(function(){
+    $('.view-videos .view-content').slick({
+    appendArrows: '.view-videos .view-content',
+    nextArrow: '<div class="slick-next"></div>',
+    prevArrow: '<div class="slick-prev"></div>',
+  });
+  });
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
@@ -27,6 +33,7 @@ Drupal.behaviors.my_custom_behavior = {
       $(this).next().toggleClass('element-invisible')
     })
    });
+
   })
 
 

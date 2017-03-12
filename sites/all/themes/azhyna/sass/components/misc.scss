@@ -1046,3 +1046,99 @@ tr.selected td {
     }
   }
 }
+
+// Reviews
+.node-review {
+  display: flex;
+
+  .review-author {
+    margin-right: 20px;
+    .submitted {
+      color: #777;
+      font-size: .8em;
+    }
+  }
+
+  .review-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 100%;
+      border-top: 5px solid transparent;
+      border-right: 20px solid #fff;
+      border-bottom: 10px solid transparent
+    }
+  }
+}
+
+// video slider
+.view-videos {
+  .view-content {
+    overflow: hidden;
+
+    .views-row {
+      float: left;
+    }
+
+    .slick-list {
+      margin: 0 50px;
+      overflow: hidden;
+    }
+  }
+
+
+}
+
+.slick-prev {
+    width: 30px;
+    height: 100px;
+    background: image-url("arrow-left.png") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 48%;
+    left: 10px;
+  }
+
+  .slick-next {
+    @extend .slick-prev;
+    left: auto;
+    right: 10px;
+    transform: rotate(180deg);
+  }
+
+// Call button
+  .call-button {
+    @include button($graphite);
+    text-decoration:  none;
+    font-size: 2em;
+    padding: 15px 30px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // Flex
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    .flex-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  // Submit button
+  .webform-submit {
+    @include button($graphite);
+  }

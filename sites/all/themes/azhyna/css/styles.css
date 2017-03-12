@@ -2161,6 +2161,139 @@ tr.selected td {
   margin-top: 0;
 }
 
+/* line 1051, ../sass/components/misc.scss */
+.node-review {
+  display: flex;
+}
+/* line 1054, ../sass/components/misc.scss */
+.node-review .review-author {
+  margin-right: 20px;
+}
+/* line 1056, ../sass/components/misc.scss */
+.node-review .review-author .submitted {
+  color: #777;
+  font-size: .8em;
+}
+/* line 1062, ../sass/components/misc.scss */
+.node-review .review-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+/* line 1068, ../sass/components/misc.scss */
+.node-review .review-content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 100%;
+  border-top: 5px solid transparent;
+  border-right: 20px solid #fff;
+  border-bottom: 10px solid transparent;
+}
+
+/* line 1083, ../sass/components/misc.scss */
+.view-videos .view-content {
+  overflow: hidden;
+}
+/* line 1086, ../sass/components/misc.scss */
+.view-videos .view-content .views-row {
+  float: left;
+}
+/* line 1090, ../sass/components/misc.scss */
+.view-videos .view-content .slick-list {
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+/* line 1099, ../sass/components/misc.scss */
+.slick-prev, .slick-next {
+  width: 30px;
+  height: 100px;
+  background: url('../images/arrow-left.png?1489336221') center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 48%;
+  left: 10px;
+}
+
+/* line 1109, ../sass/components/misc.scss */
+.slick-next {
+  left: auto;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+/* line 1117, ../sass/components/misc.scss */
+.call-button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #272727;
+  border-bottom: 3px solid #070707;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 15px 30px;
+}
+/* line 46, ../sass/mixins.scss */
+.call-button li {
+  padding: 0;
+}
+/* line 47, ../sass/mixins.scss */
+.call-button a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 51, ../sass/mixins.scss */
+.call-button:hover {
+  background-color: #474747;
+}
+/* line 1123, ../sass/components/misc.scss */
+.call-button:hover, .call-button:focus {
+  text-decoration: none;
+}
+
+/* line 1130, ../sass/components/misc.scss */
+.flex-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 1134, ../sass/components/misc.scss */
+.flex-wrapper .flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 1142, ../sass/components/misc.scss */
+.webform-submit {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #272727;
+  border-bottom: 3px solid #070707;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+}
+/* line 46, ../sass/mixins.scss */
+.webform-submit li {
+  padding: 0;
+}
+/* line 47, ../sass/mixins.scss */
+.webform-submit a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 51, ../sass/mixins.scss */
+.webform-submit:hover {
+  background-color: #474747;
+}
+
 /**
  * @file
  * Print styling
