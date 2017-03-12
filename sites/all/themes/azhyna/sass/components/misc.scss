@@ -1021,3 +1021,28 @@ tr.selected td {
 	float: left;
 	margin: 0px 20px 20px 0;
 }
+
+.sf-menu.sf-horizontal.sf-shadow ul,
+.sf-menu.sf-vertical.sf-shadow ul,
+.sf-menu.sf-navbar.sf-shadow ul ul {
+  left: 0 !important;
+  max-width: 120%;
+}
+
+.view-info {
+  margin-bottom: 1.5em;
+  .views-row {
+    border-bottom: 1px solid #777;
+
+    .field-name-body {
+      overflow: hidden;
+      margin-bottom: -10px;
+    }
+
+    .links.inline {
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+  }
+}
