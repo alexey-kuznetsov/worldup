@@ -42,3 +42,9 @@ Drupal.behaviors.my_custom_behavior = {
 
 
 })(jQuery, Drupal, this, this.document);
+
+// Add missed translations
+Drupal.locale.strings[""]["@count[2] seconds"] = "@count[2] секунд";
+Drupal.locale.strings[""]["@count[2] minutes"] = "@count[2] минут";
+Drupal.locale.strings[""]["@count[2] hours"] = "@count[2] часов";
+Drupal.locale.strings[""]["@count[2] weeks"] = "@count[2] недель";
